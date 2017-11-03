@@ -1,0 +1,14 @@
+{
+  "name": "property-base",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bottender": "^0.14.0",
+    "nodemon": "^1.12.1"
+  }
+}
