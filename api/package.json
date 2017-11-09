@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "wit chatbot api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adack123/property.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adack123/property/issues"
+  },
+  "homepage": "https://github.com/adack123/property#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "got": "^7.1.0"
+  }
+}
