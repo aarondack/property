@@ -1,11 +1,16 @@
 const got = require("got");
-const env = require('dotenv').config();
+const env = require("dotenv").config();
 
-let witurl = 'https://api.wit.ai/message?v=20171108&q='
-let witsponse;
-
-function chgMessage(chatText) {
-  // get text from console to send to api
+const witAPI = {
+  async query(message) {
+    const { body } = await got(`${process.env.WIT_API}&q=${message}`, {
+      headers: {
+        Authorization: `Bearer ${process.env.WIT_API_TOKEN}`
+      },
+      json: true
+    });
+    return body;
+  }
 };
 
-got(witurl).then((response) => {witsponse = response.body});
+module.exports = witAPI;

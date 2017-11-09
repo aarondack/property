@@ -7,9 +7,10 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "bottender": "0.14.0"
+    "bottender": "^0.14.0"
   },
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "nodemon": "^1.12.1"
   }
 }
